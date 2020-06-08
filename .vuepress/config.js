@@ -21,6 +21,8 @@ module.exports = {
   theme: "reco",
 
   themeConfig: {
+    nextLinks: true,
+    prevLinks: true,
     nav: [
       { text: "主页", link: "/", icon: "reco-home" },
       { text: "时间轴", link: "/timeline/", icon: "reco-date" },
@@ -38,6 +40,11 @@ module.exports = {
         text: "联系我",
         icon: "reco-message",
         items: [
+          {
+            text: "关于我",
+            link: "/about/",
+            icon: "reco-account",
+          }
           {
             text: "CSDN",
             link: "https://blog.csdn.net/qq_15102659",
@@ -80,6 +87,19 @@ module.exports = {
         email: "710959927@qq.com",
         link: "https://www.cnblogs.com/shuitiangong/",
       },
+      {
+        title: "午后南杂",
+        desc: "Enjoy when you can, and endure when you must.",
+        email: "1156743527@qq.com",
+        link: "https://www.recoluan.com",
+      },
+      {
+        title: "vuepress-theme-reco",
+        desc: "A simple and beautiful vuepress Blog & Doc theme.",
+        avatar:
+          "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
+        link: "https://vuepress-theme-reco.recoluan.com",
+      },
     ],
     logo: "/logo.jpg",
     // 搜索设置
@@ -111,10 +131,10 @@ module.exports = {
      * valine 设置 (if you need valine comment )
      */
 
-    // valineConfig: {
-    //   appId: '...',// your appId
-    //   appKey: '...', // your appKey
-    // }
+    valineConfig: {
+      appId: "CGLTObkKHIUNUXWRjdE7f5l0-gzGzoHsz", // your appId
+      appKey: "pc5NsCS1IOMgsD5S5fn7gu1l", // your appKey
+    },
   },
 
   markdown: {
