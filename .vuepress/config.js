@@ -44,7 +44,7 @@ module.exports = {
             text: "关于我",
             link: "/about/",
             icon: "reco-account",
-          }
+          },
           {
             text: "CSDN",
             link: "https://blog.csdn.net/qq_15102659",

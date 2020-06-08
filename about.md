@@ -5,6 +5,8 @@ tags:
  - 日常
 categories:
  - 日常
+ sticky:
+ 1
 ---
 
 # 关于我
