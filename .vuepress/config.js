@@ -120,5 +120,4 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
-  // plugins: [["vuepress-plugin-screenfull", true]],
 };
