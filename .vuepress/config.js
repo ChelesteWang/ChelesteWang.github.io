@@ -67,19 +67,19 @@ module.exports = {
       },
     },
     friendLink: [
-      // {
-      //   title: "yuqing521",
-      //   desc: "Enjoy when you can, and endure when you must.",
-      //   email: "1581446178@qq.com",
-      //   link: "",
-      // },
-      // {
-      //   title: "vuepress-theme-reco",
-      //   desc: "A simple and beautiful vuepress Blog & Doc theme.",
-      //   avatar:
-      //     "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-      //   link: "https://vuepress-theme-reco.recoluan.com",
-      // },
+      {
+        title: "Francis-xsc blog",
+        desc: "Francis-xsc 的学习随笔",
+        email: "xsc920364365@163.com",
+        link: "https://www.cnblogs.com/xusichong",
+      },
+      {
+        title: "水天宫的博客",
+        desc: "学习随笔",
+        avatar: "https://pic.cnblogs.com/avatar/1894271/20191210091940.png",
+        email: "710959927@qq.com",
+        link: "https://www.cnblogs.com/shuitiangong/",
+      },
     ],
     logo: "/logo.jpg",
     // 搜索设置
@@ -120,4 +120,5 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
+  plugins: [["vuepress-plugin-screenfull", true]],
 };

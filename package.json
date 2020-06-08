@@ -10,5 +10,9 @@
     "vuepress": "^1.4.1",
     "vuepress-theme-reco": "1.4.6"
   },
-  "description": "Personal Code Learning and Experience Accumulation"
+  "description": "Personal Code Learning and Experience Accumulation",
+  "dependencies": {
+    "@nines/vuepress-plugin-screenfull": "0.0.3",
+    "screenfull": "^5.0.2"
+  }
 }
