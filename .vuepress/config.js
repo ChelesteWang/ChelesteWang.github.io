@@ -68,10 +68,10 @@ module.exports = {
     },
     friendLink: [
       // {
-      //   title: "午后南杂",
+      //   title: "yuqing521",
       //   desc: "Enjoy when you can, and endure when you must.",
       //   email: "1581446178@qq.com",
-      //   link: "https://www.recoluan.com",
+      //   link: "",
       // },
       // {
       //   title: "vuepress-theme-reco",
