@@ -75,6 +75,12 @@ module.exports = {
     },
     friendLink: [
       {
+        title: "峰华前端工程师",
+        desc: "b站主页：https://space.bilibili.com/302954484",
+        email: "944831942@qq.com",
+        link: "https://zxuqian.cn",
+      },
+      {
         title: "Francis-xsc blog",
         desc: "Francis-xsc 的学习随笔",
         email: "xsc920364365@163.com",
@@ -83,7 +89,6 @@ module.exports = {
       {
         title: "水天宫的博客",
         desc: "学习随笔",
-        avatar: "https://pic.cnblogs.com/avatar/1894271/20191210091940.png",
         email: "710959927@qq.com",
         link: "https://www.cnblogs.com/shuitiangong/",
       },
