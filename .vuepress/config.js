@@ -93,6 +93,12 @@ module.exports = {
         link: "https://www.cnblogs.com/shuitiangong/",
       },
       {
+        title: "大白萝卜的坑",
+        desc: "学习随笔",
+        email: "1395404299@qq.com",
+        link: "https://dabailuobo.com/",
+      },
+      {
         title: "午后南杂",
         desc: "Enjoy when you can, and endure when you must.",
         email: "1156743527@qq.com",
