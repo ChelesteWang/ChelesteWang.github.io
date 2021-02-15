@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>从零开始webpack 01 | CodeLife</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Personal Code Learning and Experience Accumulation .">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.9767b92f.css" as="style"><link rel="preload" href="/assets/js/app.aad361ee.js" as="script"><link rel="preload" href="/assets/js/3.af3c1f70.js" as="script"><link rel="preload" href="/assets/js/1.c79bad48.js" as="script"><link rel="preload" href="/assets/js/31.d0d7bc44.js" as="script"><link rel="prefetch" href="/assets/js/10.010e1ba3.js"><link rel="prefetch" href="/assets/js/11.39ed25a4.js"><link rel="prefetch" href="/assets/js/12.a092173d.js"><link rel="prefetch" href="/assets/js/13.4073c764.js"><link rel="prefetch" href="/assets/js/14.49c9da22.js"><link rel="prefetch" href="/assets/js/15.fafcc17e.js"><link rel="prefetch" href="/assets/js/16.f4e40871.js"><link rel="prefetch" href="/assets/js/17.f6f7bf92.js"><link rel="prefetch" href="/assets/js/18.814ef7db.js"><link rel="prefetch" href="/assets/js/19.333a4dd5.js"><link rel="prefetch" href="/assets/js/20.72257cc3.js"><link rel="prefetch" href="/assets/js/21.0b42dcc2.js"><link rel="prefetch" href="/assets/js/22.9ab4d541.js"><link rel="prefetch" href="/assets/js/23.8a9de3a9.js"><link rel="prefetch" href="/assets/js/24.faf492cf.js"><link rel="prefetch" href="/assets/js/25.816ee458.js"><link rel="prefetch" href="/assets/js/26.a2135504.js"><link rel="prefetch" href="/assets/js/27.079a0490.js"><link rel="prefetch" href="/assets/js/28.d64133f5.js"><link rel="prefetch" href="/assets/js/29.39befe27.js"><link rel="prefetch" href="/assets/js/30.8177531b.js"><link rel="prefetch" href="/assets/js/32.0ac6963b.js"><link rel="prefetch" href="/assets/js/33.e2680fba.js"><link rel="prefetch" href="/assets/js/34.40dac8d9.js"><link rel="prefetch" href="/assets/js/35.29dd8384.js"><link rel="prefetch" href="/assets/js/36.36c2a86d.js"><link rel="prefetch" href="/assets/js/37.ac9dc83d.js"><link rel="prefetch" href="/assets/js/38.e498cde2.js"><link rel="prefetch" href="/assets/js/39.f72e6a4a.js"><link rel="prefetch" href="/assets/js/4.b34b4de4.js"><link rel="prefetch" href="/assets/js/40.46a83ee4.js"><link rel="prefetch" href="/assets/js/41.b7acc3ae.js"><link rel="prefetch" href="/assets/js/5.c943c554.js"><link rel="prefetch" href="/assets/js/6.99b5dec6.js"><link rel="prefetch" href="/assets/js/7.25fbbb4b.js"><link rel="prefetch" href="/assets/js/8.04e8fe25.js"><link rel="prefetch" href="/assets/js/9.1487290f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9767b92f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-19557b78><div data-v-19557b78><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-19557b78 data-v-19557b78><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-19557b78 data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>CodeLife</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>yuqing521</span>
+            
+          <span data-v-64685f0e>2019 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-19557b78><header class="navbar" data-v-19557b78><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="CodeLife" class="logo"> <span class="site-name">CodeLife</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/日常/" class="nav-link"><i class="iconfont undefined"></i>
+  日常
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端/" class="nav-link"><i class="iconfont undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/基础知识/" class="nav-link"><i class="iconfont undefined"></i>
+  基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/读书/" class="nav-link"><i class="iconfont undefined"></i>
+  读书
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/yuqing521" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/qq_15102659" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://juejin.im/user/5e1f0c756fb9a02fe654adf6" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-juejin"></i>
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-19557b78></div> <aside class="sidebar" data-v-19557b78><div class="personal-info-wrapper" data-v-042e23d4><img src="/3WYk5j.jpg" alt="author-avatar" class="personal-img" data-v-042e23d4> <h3 class="name" data-v-042e23d4>
+    yuqing521
+  </h3> <div class="num" data-v-042e23d4><div data-v-042e23d4><h3 data-v-042e23d4>27</h3> <h6 data-v-042e23d4>文章</h6></div> <div data-v-042e23d4><h3 data-v-042e23d4>33</h3> <h6 data-v-042e23d4>标签</h6></div></div> <hr data-v-042e23d4></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/日常/" class="nav-link"><i class="iconfont undefined"></i>
+  日常
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端/" class="nav-link"><i class="iconfont undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/基础知识/" class="nav-link"><i class="iconfont undefined"></i>
+  基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/读书/" class="nav-link"><i class="iconfont undefined"></i>
+  读书
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/yuqing521" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/qq_15102659" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://juejin.im/user/5e1f0c756fb9a02fe654adf6" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-juejin"></i>
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>从零开始webpack 01</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/frontend/2020/20200610.html#前置知识" class="sidebar-link">前置知识</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blogs/frontend/2020/20200610.html#about-webpack" class="sidebar-link">About webpack</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/frontend/2020/20200610.html#核心概念" class="sidebar-link">核心概念</a></li></ul></li><li><a href="/blogs/frontend/2020/20200610.html#get-start" class="sidebar-link">Get Start</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/frontend/2020/20200610.html#local-installation" class="sidebar-link">Local Installation</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2020/20200610.html#basic-setup" class="sidebar-link">Basic Setup</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2020/20200610.html#解决一个基本打包问题" class="sidebar-link">解决一个基本打包问题</a></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>从零开始webpack 01</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>yuqing521</span>
+            
+          <span data-v-64685f0e>2019 - </span>
+          2021
+        </a></span></div></div> <div data-v-19557b78><main class="page"><div class="page-title" style="display:none;"><h1>从零开始webpack 01</h1> <hr> <div data-v-34ea29db><i class="iconfont reco-account" data-v-34ea29db><span data-v-34ea29db>yuqing521</span></i> <i class="iconfont reco-date" data-v-34ea29db><span data-v-34ea29db>2020-06-10</span></i> <i class="iconfont reco-eye" data-v-34ea29db><span id="/blogs/frontend/2020/20200610.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-34ea29db><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-34ea29db><span class="tag-item" data-v-34ea29db>webpack</span><span class="tag-item" data-v-34ea29db>前端</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p><img src="https://i.loli.net/2020/06/09/1upoEitG5AzvraB.png" alt="image-20200609201046595"></p> <h1 id="从零开始webpack-01"><a href="#从零开始webpack-01" class="header-anchor">#</a> 从零开始webpack 01</h1> <h2 id="前置知识"><a href="#前置知识" class="header-anchor">#</a> 前置知识</h2> <h4 id="npx指令"><a href="#npx指令" class="header-anchor">#</a> npx指令</h4> <p>npx <command></command></p> <ul><li><p>帮你在本地（可以是项目中的也可以是本机的）寻找这个 command</p> <ul><li>找到了： 就用本地的版本</li> <li>没找到： 直接下载最新版本，完成命令要求</li></ul></li> <li><p><strong>使用完之后不会在你的本机或者项目留下任何东西</strong></p> <p>因此优势总结：</p> <ul><li>不会污染本机</li> <li>永远使用最新版本的dependency（依赖包）</li></ul></li></ul> <h2 id="about-webpack"><a href="#about-webpack" class="header-anchor">#</a> About webpack</h2> <p><em>webpack</em> 是一个现代 JavaScript 应用程序的<em>静态模块打包器(module bundler)</em>。当 webpack 处理应用程序时，它会递归地构建一个<em>依赖关系图(dependency graph)</em>，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 <em>bundle</em>。</p> <p><img src="https://i.loli.net/2020/06/09/TRIt56oQYlhFDAi.png" alt="image-20200609203640013"></p> <h3 id="核心概念"><a href="#核心概念" class="header-anchor">#</a> 核心概念</h3> <p><strong>入口(entry)</strong></p> <p>告知webpack打包的文件入口</p> <p><strong>输出(output)</strong></p> <p>指定在哪里输出构建的<em>bundles</em>，以及如何命名这些文件，默认值为 <code>./dist</code>。</p> <p><strong>loader</strong></p> <p>使<em>loader</em> 让 webpack 能够去处理那些非 JavaScript 文件</p> <p><strong>插件(plugins)</strong></p> <p>插件比loader功能更加广泛，从打包优化和压缩，一直到重新定义环境中的变量。</p> <h2 id="get-start"><a href="#get-start" class="header-anchor">#</a> Get Start</h2> <h3 id="local-installation"><a href="#local-installation" class="header-anchor">#</a> Local Installation</h3> <p>本地安装webpack和webpack-cli脚手架</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> --save-dev webpack
+<span class="token function">npm</span> <span class="token function">install</span> --save-dev webpack-cli
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="basic-setup"><a href="#basic-setup" class="header-anchor">#</a> Basic Setup</h3> <p>首先我们创建一个目录，初始化 npm，然后 在本地安装 webpack，接着安装 webpack-cli（此工具用于在命令行中运行 webpack）：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">mkdir</span> webpack-demo <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> webpack-demo
+<span class="token function">npm</span> init -y
+<span class="token function">npm</span> <span class="token function">install</span> webpack webpack-cli --save-dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="解决一个基本打包问题"><a href="#解决一个基本打包问题" class="header-anchor">#</a> 解决一个基本打包问题</h3> <h4 id="现在我们将创建以下目录结构、文件和内容："><a href="#现在我们将创建以下目录结构、文件和内容：" class="header-anchor">#</a> 现在我们将创建以下目录结构、文件和内容：</h4> <p><strong>project</strong></p> <div class="language-diff line-numbers-mode"><pre class="language-diff"><code><span class="token unchanged">  webpack-demo
+  |- package.json
+</span><span class="token inserted-sign inserted">+ |- index.html
++ |- /src
++   |- index.js
+</span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>src/index.js</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">component</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> element <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Lodash（目前通过一个 script 脚本引入）对于执行这一行是必需的</span>
+  element<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> _<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'Hello'</span><span class="token punctuation">,</span> <span class="token string">'webpack'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> element<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong>index.html</strong></p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token doctype">&lt;!doctype html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>起步<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/lodash@4.16.6<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./src/index.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>我们还需要调整 <code>package.json</code> 文件，以便确保我们安装包是<code>私有的(private)</code>，并且移除 <code>main</code> 入口。这可以防止意外发布你的代码。</p> <p><strong>package.json</strong></p> <div class="language-diff line-numbers-mode"><pre class="language-diff"><code><span class="token unchanged">  {
+    &quot;name&quot;: &quot;webpack-demo&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;description&quot;: &quot;&quot;,
+</span><span class="token inserted-sign inserted">+   &quot;private&quot;: true,
+</span><span class="token deleted-sign deleted">-   &quot;main&quot;: &quot;index.js&quot;,
+</span><span class="token unchanged">    &quot;scripts&quot;: {
+      &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+    },
+    &quot;keywords&quot;: [],
+    &quot;author&quot;: &quot;&quot;,
+    &quot;license&quot;: &quot;ISC&quot;,
+    &quot;devDependencies&quot;: {
+      &quot;webpack&quot;: &quot;^4.0.1&quot;,
+      &quot;webpack-cli&quot;: &quot;^2.0.9&quot;
+    },
+    &quot;dependencies&quot;: {}
+  }
+</span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h4 id="现在将项目依赖文件抽离出来"><a href="#现在将项目依赖文件抽离出来" class="header-anchor">#</a> 现在将项目依赖文件抽离出来</h4> <p>将html的cdn资源通过本地安装，将多个JavaScript引用改为单个main.js引用</p> <p>修改后项目结构如下</p> <p><strong>project</strong></p> <div class="language-diff line-numbers-mode"><pre class="language-diff"><code><span class="token unchanged">  webpack-demo
+  |- package.json
+</span><span class="token inserted-sign inserted">+ |- /dist
++   |- index.html
+</span><span class="token deleted-sign deleted">- |- index.html
+</span><span class="token unchanged">  |- /src
+    |- index.js
+</span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>src/index.js</strong></p> <div class="language-diff line-numbers-mode"><pre class="language-diff"><code><span class="token inserted-sign inserted">+ import _ from 'lodash';
++
+</span><span class="token unchanged">  function component() {
+    var element = document.createElement('div');
+</span>
+<span class="token deleted-sign deleted">-   // Lodash, currently included via a script, is required for this line to work
+</span><span class="token inserted-sign inserted">+   // Lodash, now imported by this script
+</span><span class="token unchanged">    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+</span>
+<span class="token unchanged">    return element;
+  }
+</span>
+<span class="token unchanged">  document.body.appendChild(component());
+</span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong>dist/index.html</strong></p> <div class="language-diff line-numbers-mode"><pre class="language-diff"><code><span class="token unchanged">  &lt;!doctype html&gt;
+  &lt;html&gt;
+   &lt;head&gt;
+     &lt;title&gt;起步&lt;/title&gt;
+</span><span class="token deleted-sign deleted">-    &lt;script src=&quot;https://unpkg.com/lodash@4.16.6&quot;&gt;&lt;/script&gt;
+</span><span class="token unchanged">   &lt;/head&gt;
+   &lt;body&gt;
+</span><span class="token deleted-sign deleted">-    &lt;script src=&quot;./src/index.js&quot;&gt;&lt;/script&gt;
+</span><span class="token inserted-sign inserted">+    &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;
+</span><span class="token unchanged">   &lt;/body&gt;
+  &lt;/html&gt;
+</span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h5 id="使用命令行对项目进行打包"><a href="#使用命令行对项目进行打包" class="header-anchor">#</a> 使用命令行对项目进行打包</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>npx webpack
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="当我们遇上更复杂的需求时需要自定义配置文件"><a href="#当我们遇上更复杂的需求时需要自定义配置文件" class="header-anchor">#</a> 当我们遇上更复杂的需求时需要自定义配置文件</h4> <p><strong>project</strong></p> <div class="language-diff line-numbers-mode"><pre class="language-diff"><code><span class="token unchanged">  webpack-demo
+  |- package.json
+</span><span class="token inserted-sign inserted">+ |- webpack.config.js
+</span><span class="token unchanged">  |- /dist
+    |- index.html
+  |- /src
+    |- index.js
+</span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>webpack.config.js</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  entry<span class="token operator">:</span> <span class="token string">'./src/index.js'</span><span class="token punctuation">,</span>
+  output<span class="token operator">:</span> <span class="token punctuation">{</span>
+    filename<span class="token operator">:</span> <span class="token string">'bundle.js'</span><span class="token punctuation">,</span>
+    path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'dist'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>使用命令行对项目进行打包</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npx webpack --config webpack.config.js
+也可直接使用
+npx webpack
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="custom-block tip"><p><em>如果</em> <code>webpack.config.js</code> <em>存在，则</em> <code>webpack</code> <em>命令将默认选择使用它。我们在这里使用</em> <code>--config</code> <em>选项只是向你表明，可以传递任何名称的配置文件。这对于需要拆分成多个文件的复杂配置是非常有用。</em></p></div> <p>为了让每一个开发者使用相同构建脚本可以在package.json中设置一个build的快捷方式</p> <p><strong>package.json</strong></p> <div class="language-diff line-numbers-mode"><pre class="language-diff"><code><span class="token unchanged">  {
+    &quot;name&quot;: &quot;webpack-demo&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;main&quot;: &quot;index.js&quot;,
+    &quot;scripts&quot;: {
+      &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+</span><span class="token inserted-sign inserted">+     &quot;build&quot;: &quot;webpack&quot;
+</span><span class="token unchanged">    },
+    &quot;keywords&quot;: [],
+    &quot;author&quot;: &quot;&quot;,
+    &quot;license&quot;: &quot;ISC&quot;,
+    &quot;devDependencies&quot;: {
+      &quot;webpack&quot;: &quot;^4.0.1&quot;,
+      &quot;webpack-cli&quot;: &quot;^2.0.9&quot;,
+      &quot;lodash&quot;: &quot;^4.17.5&quot;
+    }
+  }
+</span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>使用新指令构建项目</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm run build
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p><em>通过向</em> <code>npm run build</code> <em>命令和你的参数之间添加两个中横线，可以将自定义参数传递给 webpack，例如：</em><code>npm run build -- --colors</code><em>。</em></p></div> <p><strong>这样我们就完成了一个简单项目的处理了</strong></p> <p><strong>这样我们就完成了一个简单项目的处理了</strong></p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2021/1/18 下午8:16:51</span></div></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.aad361ee.js" defer></script><script src="/assets/js/3.af3c1f70.js" defer></script><script src="/assets/js/1.c79bad48.js" defer></script><script src="/assets/js/31.d0d7bc44.js" defer></script>
+  </body>
+</html>

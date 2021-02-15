@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>《架构整洁之道》读书笔记 2 | CodeLife</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Personal Code Learning and Experience Accumulation .">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.9767b92f.css" as="style"><link rel="preload" href="/assets/js/app.aad361ee.js" as="script"><link rel="preload" href="/assets/js/3.af3c1f70.js" as="script"><link rel="preload" href="/assets/js/1.c79bad48.js" as="script"><link rel="preload" href="/assets/js/36.36c2a86d.js" as="script"><link rel="prefetch" href="/assets/js/10.010e1ba3.js"><link rel="prefetch" href="/assets/js/11.39ed25a4.js"><link rel="prefetch" href="/assets/js/12.a092173d.js"><link rel="prefetch" href="/assets/js/13.4073c764.js"><link rel="prefetch" href="/assets/js/14.49c9da22.js"><link rel="prefetch" href="/assets/js/15.fafcc17e.js"><link rel="prefetch" href="/assets/js/16.f4e40871.js"><link rel="prefetch" href="/assets/js/17.f6f7bf92.js"><link rel="prefetch" href="/assets/js/18.814ef7db.js"><link rel="prefetch" href="/assets/js/19.333a4dd5.js"><link rel="prefetch" href="/assets/js/20.72257cc3.js"><link rel="prefetch" href="/assets/js/21.0b42dcc2.js"><link rel="prefetch" href="/assets/js/22.9ab4d541.js"><link rel="prefetch" href="/assets/js/23.8a9de3a9.js"><link rel="prefetch" href="/assets/js/24.faf492cf.js"><link rel="prefetch" href="/assets/js/25.816ee458.js"><link rel="prefetch" href="/assets/js/26.a2135504.js"><link rel="prefetch" href="/assets/js/27.079a0490.js"><link rel="prefetch" href="/assets/js/28.d64133f5.js"><link rel="prefetch" href="/assets/js/29.39befe27.js"><link rel="prefetch" href="/assets/js/30.8177531b.js"><link rel="prefetch" href="/assets/js/31.d0d7bc44.js"><link rel="prefetch" href="/assets/js/32.0ac6963b.js"><link rel="prefetch" href="/assets/js/33.e2680fba.js"><link rel="prefetch" href="/assets/js/34.40dac8d9.js"><link rel="prefetch" href="/assets/js/35.29dd8384.js"><link rel="prefetch" href="/assets/js/37.ac9dc83d.js"><link rel="prefetch" href="/assets/js/38.e498cde2.js"><link rel="prefetch" href="/assets/js/39.f72e6a4a.js"><link rel="prefetch" href="/assets/js/4.b34b4de4.js"><link rel="prefetch" href="/assets/js/40.46a83ee4.js"><link rel="prefetch" href="/assets/js/41.b7acc3ae.js"><link rel="prefetch" href="/assets/js/5.c943c554.js"><link rel="prefetch" href="/assets/js/6.99b5dec6.js"><link rel="prefetch" href="/assets/js/7.25fbbb4b.js"><link rel="prefetch" href="/assets/js/8.04e8fe25.js"><link rel="prefetch" href="/assets/js/9.1487290f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9767b92f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-19557b78><div data-v-19557b78><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-19557b78 data-v-19557b78><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-19557b78 data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>CodeLife</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>yuqing521</span>
+            
+          <span data-v-64685f0e>2019 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-19557b78><header class="navbar" data-v-19557b78><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="CodeLife" class="logo"> <span class="site-name">CodeLife</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/日常/" class="nav-link"><i class="iconfont undefined"></i>
+  日常
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端/" class="nav-link"><i class="iconfont undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/基础知识/" class="nav-link"><i class="iconfont undefined"></i>
+  基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/读书/" class="nav-link"><i class="iconfont undefined"></i>
+  读书
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/yuqing521" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/qq_15102659" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://juejin.im/user/5e1f0c756fb9a02fe654adf6" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-juejin"></i>
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-19557b78></div> <aside class="sidebar" data-v-19557b78><div class="personal-info-wrapper" data-v-042e23d4><img src="/3WYk5j.jpg" alt="author-avatar" class="personal-img" data-v-042e23d4> <h3 class="name" data-v-042e23d4>
+    yuqing521
+  </h3> <div class="num" data-v-042e23d4><div data-v-042e23d4><h3 data-v-042e23d4>27</h3> <h6 data-v-042e23d4>文章</h6></div> <div data-v-042e23d4><h3 data-v-042e23d4>33</h3> <h6 data-v-042e23d4>标签</h6></div></div> <hr data-v-042e23d4></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/日常/" class="nav-link"><i class="iconfont undefined"></i>
+  日常
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端/" class="nav-link"><i class="iconfont undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/基础知识/" class="nav-link"><i class="iconfont undefined"></i>
+  基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/读书/" class="nav-link"><i class="iconfont undefined"></i>
+  读书
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/yuqing521" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/qq_15102659" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://juejin.im/user/5e1f0c756fb9a02fe654adf6" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-juejin"></i>
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>《架构整洁之道》读书笔记 2</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/frontend/2021/20210214.html#组件" class="sidebar-link">组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#拆分三原则" class="sidebar-link">拆分三原则</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#rep：复用，发布等同原则" class="sidebar-link">REP：复用，发布等同原则</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#ccp：共同闭包原则" class="sidebar-link">CCP：共同闭包原则</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#crp：共同复用原则" class="sidebar-link">CRP：共同复用原则</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#三者关系" class="sidebar-link">三者关系</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#依赖三原则" class="sidebar-link">依赖三原则</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#无依赖原则" class="sidebar-link">无依赖原则</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#稳定依赖原则" class="sidebar-link">稳定依赖原则</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#稳定抽象原则" class="sidebar-link">稳定抽象原则</a></li></ul></li><li><a href="/blogs/frontend/2021/20210214.html#封装方式" class="sidebar-link">封装方式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blogs/frontend/2021/20210214.html#软件架构" class="sidebar-link">软件架构</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#目的" class="sidebar-link">目的</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#方针" class="sidebar-link">方针</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#内容" class="sidebar-link">内容</a></li><li class="sidebar-sub-header"><a href="/blogs/frontend/2021/20210214.html#软件的生命周期" class="sidebar-link">软件的生命周期</a></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>《架构整洁之道》读书笔记 2</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>yuqing521</span>
+            
+          <span data-v-64685f0e>2019 - </span>
+          2021
+        </a></span></div></div> <div data-v-19557b78><main class="page"><div class="page-title" style="display:none;"><h1>《架构整洁之道》读书笔记 2</h1> <hr> <div data-v-34ea29db><i class="iconfont reco-account" data-v-34ea29db><span data-v-34ea29db>yuqing521</span></i> <i class="iconfont reco-date" data-v-34ea29db><span data-v-34ea29db>2021-02-14</span></i> <i class="iconfont reco-eye" data-v-34ea29db><span id="/blogs/frontend/2021/20210214.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-34ea29db><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-34ea29db><span class="tag-item" data-v-34ea29db>架构</span><span class="tag-item" data-v-34ea29db>后端</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p><img src="https://i.loli.net/2021/02/13/whdrqpBJ7F3moyj.png" alt="image.png"></p> <h1 id="《架构整洁之道》读书笔记-2"><a href="#《架构整洁之道》读书笔记-2" class="header-anchor">#</a> 《架构整洁之道》读书笔记 2</h1> <h2 id="组件"><a href="#组件" class="header-anchor">#</a> 组件</h2> <p>定义：是软件的部署单元，是整个软件系统可以独立完成部署的最小实体</p> <h3 id="拆分三原则"><a href="#拆分三原则" class="header-anchor">#</a> 拆分三原则</h3> <h3 id="rep：复用，发布等同原则"><a href="#rep：复用，发布等同原则" class="header-anchor">#</a> REP：复用，发布等同原则</h3> <p>内容：软件复用的最小粒度应等同于其发布的最小粒度</p> <h3 id="ccp：共同闭包原则"><a href="#ccp：共同闭包原则" class="header-anchor">#</a> CCP：共同闭包原则</h3> <p>内容：将为了相同目的而同时修改的类放在同一个组件中，是SRP原则在组件层面的描述
+执行：</p> <ol><li>对大部分应用程序而言，可维护性的重要性远远大于可复用性</li> <li>因为一个原因需要做修改，这个修改最好在同一个组件中，如果分散在多个组件中，那么开发、提交、部署的成本都会上升</li></ol> <h3 id="crp：共同复用原则"><a href="#crp：共同复用原则" class="header-anchor">#</a> CRP：共同复用原则</h3> <p>内容：不要强迫一个组件依赖它不需要的东西，是SP原则在组件层面的描述</p> <h3 id="三者关系"><a href="#三者关系" class="header-anchor">#</a> 三者关系</h3> <p><img src="https://i.loli.net/2021/02/14/aUDRzYi3JlXkVx9.png" alt="image.png"></p> <p>架构设计中有许多矛盾，研发性和复用性的矛盾、而研发性本身又有粘性(CCP)和排斥性的矛盾(CRP)</p> <p>架构师做的往往是在这个张力图中找到一个最符合现在需要的点，而这个平衡也是不断变化的，根据项目的规模迭代的节奏等</p> <h3 id="依赖三原则"><a href="#依赖三原则" class="header-anchor">#</a> 依赖三原则</h3> <h3 id="无依赖原则"><a href="#无依赖原则" class="header-anchor">#</a> 无依赖原则</h3> <p>互相依赖的组件，实际上组成了一个大组件，这三个组件要一起发布、一起做单元测试，通过依赖反转原则可以解依赖环</p> <h3 id="稳定依赖原则"><a href="#稳定依赖原则" class="header-anchor">#</a> 稳定依赖原则</h3> <p>内容：</p> <ol><li>依赖必须指向更稳定的方向，接口是最稳定的。</li> <li>组件的稳定性，指的是组件的变更困难度，影响因素有很多，比如代码的体量大小、复杂度、清晰度等，但最最重要的一个因素就是依赖的数量一一让组件难于修改的一个最直接的办法就是让很多其他组件依赖于它!</li> <li>组件的稳定性和它变更的频繁度没有直接的关联。或者说，稳定性可以分为价值(需求)的稳定性，和组件自身的稳定性。</li></ol> <p>定量指标：不稳定性(1)=出向依赖数量/(入向依赖数量+出向依赖数量)
+方法：可以通过抽接口，共同依赖接口的方式，修正违反稳定依赖的地方</p> <h3 id="稳定抽象原则"><a href="#稳定抽象原则" class="header-anchor">#</a> 稳定抽象原则</h3> <p>内容：</p> <ol><li>一个组件的抽象化程度应该与其稳定性保持一致</li> <li>为了防止高阶架构设计和髙阶策略难以修改，通常抽象岀稳定的接口或抽象类。越稳定的库就应该越抽象，这样它的稳定性就不会影响它的扩展性</li></ol> <p>定量描述：</p> <ol><li>抽象程度(A)=组件中抽象类和接口的数量/组件中类的数量</li> <li>将不稳定性和抽象程度分别作为横轴和纵轴，画一个二维的图，(0,1)(1,0)连线就是主序列线。靠近(0,0)的区域是痛苦区,改动成本很大，但是又很具体。靠近(0,0)的是无用区，非常抽象，但是没有别的组件依赖它改动成本很小，通常是废弃的。</li> <li>离主序列先的距离D=|A+1-1L可以定量化的衡量一组件的健康程度。在D满足期望的条件下，约靠近(0,1)和(1,0)越好</li></ol> <h2 id="封装方式"><a href="#封装方式" class="header-anchor">#</a> 封装方式</h2> <ol><li>按层封装，也就是传统的水平分层架构</li> <li>按功能封装，即垂直切分，根据相关的功能、业务概念或者聚合根来切分</li> <li>端口和适配器</li> <li>按组件封装</li></ol> <h2 id="软件架构"><a href="#软件架构" class="header-anchor">#</a> 软件架构</h2> <h3 id="目的"><a href="#目的" class="header-anchor">#</a> 目的</h3> <p>终极目的：最大化程序员的生产力，最小化系统的总运营成本
+细化目的：支撑软件系统的全生命周期，让系统便于理解、易于修改、方便维护、轻松部署</p> <h3 id="方针"><a href="#方针" class="header-anchor">#</a> 方针</h3> <ol><li>尽可能长时间地保留尽可能多的可选项
+<ul><li>具体选用哪个存储方式，或哪个数据库
+<ul><li>数据库：擅长于内推查询</li> <li>文件：擅长于文件快速查找和整体读取
+如果硬盘被淘汰时，用什么存储系统差别不大</li></ul></li> <li>使用哪种web服务</li> <li>使用哪种框架
+<ul><li>框架的使用文档是开发者角度写的,他自然吹嘘自己能力，希望你完全耦合他们的框架</li> <li>存在风险：
+<ul><li>产品发展,框架不再满足需求</li> <li>框架本身朝着我们不需要的方向演进</li> <li>未来我们可能希望迁到一个新的更好的框架上</li></ul></li></ul></li></ul></li> <li>边界约完善，开发和部罟成本越高。所以不完全边界能决的，不要用完全边界，低层次解耦能解决的，不要用层次解耦</li></ol> <h3 id="内容"><a href="#内容" class="header-anchor">#</a> 内容</h3> <ol><li>组件拆分
+组件是一组描述如何将输入转化为输出的策略语句的集合,这些策璐的变更原因、时间、层次相同</li></ol> <ul><li>切分
+<ul><li>水平分层
+一条策略距离系统的输入，输出越远，他的层次就越高
+例子：</li></ul> <ol><li>UI 界面</li> <li>应用独有业务逻辑</li> <li>领域普适业务逻辑</li> <li>存储</li></ol> <ul><li>按用例垂直切分
+每个用例几乎涉及到所有的水平分层，如何做到新加用例，不影响旧的用例（比如：订单聊天）</li> <li>重复
+如果两段代码，看起来重复，但是走的是不同的滨进路径，就不是真正的重复</li></ul></li> <li>解耦模式
+从上到下，(开发、部署)成本依次升高，如果低层次的解耦已经满足需要，不要进行高层次的解耦
+<ol><li>源码层次
+做了接口、类依赖上的(不完全的)解耦，但是放在同个组件中，通常放在不同的路径下</li> <li>部署层次
+仍然运行在同一个机器上，彼此通过函数调用通讯运行在不同的机器上，通过ur、网络数据包等方式进行通讯</li> <li>服务层次
+服务不等同于模块，比如横跨型变更需要改动所有服务，但是可能并不会改动架构</li></ol></li></ul> <ol start="2"><li>组件排列（依赖）
+依赖关系与数据流控制流脱钩，与组件所在层次挂钩，所以组件的依赖与组件水平分层息息相关
+<ol><li>业务实体
+<ul><li>包含关键业务数据和业务逻辑</li> <li>与界面无关、与存储无关、与框架无关，只有业务逻辑没有别的</li></ul></li> <li>用例
+特定场景下的业务逻辑
+<ul><li>三要素
+<ul><li>需要用户提供的输入数据(注意解耦输入方式，这里只关心数据)</li> <li>用户应该得到的输出数据(注意解耦输出方式，这里只关心数据)</li> <li>从输入数据到输出数据,应该采取的处理步骤
+不要把业务实体直接当做输入数据对象或者输出数据对，因为他们会以不同的原因和速率发生变更</li></ul></li></ul></li> <li>接口适配器
+整个MVC，对存储，设备，界面等接口的声明与使用</li> <li>框架与驱动程序
+<ul><li>因为与硬件太相关的部分，比如用户界面，是不可测的，所以这里的边界处理通常使用谦卑对象模式</li> <li>谦卑对象要有自知之明，简化到不能再简化，不应该包含对数据的任何处理。数据处理全部放到接口适配器(比如视图模型)中</li></ul></li> <li>测试层
+<ul><li>测试也是一个组件</li> <li>测试关键之处是耦合，测试如何依赖所有其他组件的所有接口，那测试就是脆弱的,任何改动都引起n个case失效</li> <li>解法是给测试层单独写一套特有的API</li></ul></li></ol></li> <li>组件通信
+<ol><li>方式：（接口调用，服务调用）</li> <li>完全边界
+<ol><li>调用双方都声明接口</li> <li>专用的输入数据类型</li> <li>专用的返回数据类型</li></ol></li> <li>不完全边界
+<ol><li>省掉最后一步
+保留到源码层次的解耦，声明好接口,做好分割后,仍然放在一个组件中。等到时几成熟时再拆出来独立编译部署</li> <li>单向边界
+正常的切割,应该使用两个接口，两个类各自使用对方的接口，而不是直接使用类，但是这样的开发成本很大，所以，只实现一个接口，高层用接口调用低层，而低层直接使用高层的类</li> <li>门户模式
+控制权的间接转移不用接口和实现去做，而是用门户类去故，接口都不用声明了</li></ol></li></ol></li></ol> <h3 id="软件的生命周期"><a href="#软件的生命周期" class="header-anchor">#</a> 软件的生命周期</h3> <ol><li>开发
+<ol><li>不同团队负责的组件不交叉</li> <li>不使用大量复杂的脚手架</li></ol></li> <li>部署
+<ol><li>减少组件数量，内部组件外部组件结合的方式</li> <li>不依赖成堆的脚本和配置文件</li></ol></li> <li>运行
+<ol><li>这方面的价值对架构的影响最小</li> <li>不同吞吐量、不同的响应时长要求，是架构设计要考虑的点，采用微服务?单线程?多线程</li> <li>架构应起到揭示系统运行的作用:用例、功能、行为设置应该都是对开发者可见的一级实体，以类、函数或模块的形式占据明显位置，命名能清晰地描述对应的功能</li></ol></li> <li>维护
+<ol><li>探秘成本：对现有软件系统的挖掘，确定新功能或修复问题的最佳位置和方式</li> <li>风险成本：做改动时，可能衍生出新的问题</li></ol></li></ol></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2021/2/14 下午5:30:43</span></div></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.aad361ee.js" defer></script><script src="/assets/js/3.af3c1f70.js" defer></script><script src="/assets/js/1.c79bad48.js" defer></script><script src="/assets/js/36.36c2a86d.js" defer></script>
+  </body>
+</html>
